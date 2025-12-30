@@ -1,63 +1,37 @@
-name: Metrics
-on:
-  # Schedule daily updates
-  schedule: [{cron: "0 0 * * *"}]
-  # (Optional) Run workflow manually
-  workflow_dispatch:
-  # (Optional) Run workflow when pushing on master/main
-  push: {branches: ["master", "main"]}
-jobs:
-  github-metrics:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-      - uses: lowlighter/metrics@latest
-        with:
-          # Your GitHub token
-          token: ${{ secrets.METRICS_TOKEN }}
+<div align="center">
 
-          # Options
-          user: ${{ github.repository_owner }}
-          template: classic
-          base: header, activity, community, repositories, metadata
-          config_timezone: Asia/Kolkata # Change this to your timezone
-          
-          # --- Replicating the Screenshot Visuals ---
-          
-          # 1. The Isometric Contribution Calendar (Right side 3D grid)
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: half-year
+  <br />
 
-          # 2. Coding Habits (Charts in middle)
-          plugin_habits: yes
-          plugin_habits_from: 200
-          plugin_habits_days: 14
-          plugin_habits_facts: yes
-          plugin_habits_charts: yes
+  <h1 style="font-weight: normal; letter-spacing: 2px;">BACKEND ENGINEER</h1>
 
-          # 3. Languages (Bar at bottom right)
-          plugin_languages: yes
-          plugin_languages_ignored: >-
-            html, css
-          plugin_languages_details: lines, percentage
+  <p style="color: #666; font-family: sans-serif; font-size: 14px;">
+    Java • Spring Boot • Data Structures
+  </p>
 
-          # 4. Tech Stack Icons (Bottom Left)
-          plugin_topics: yes
-          plugin_topics_limit: 0
-          plugin_topics_mode: icons
+  <br />
 
-          # 5. PageSpeed (Top Right Gauges)
-          # Note: This usually requires a separate Google API key for real data, 
-          # but this enables the visual block.
-          plugin_pagespeed: yes
-          plugin_pagespeed_url: .user.website
+  <p align="center" style="max-width: 500px; line-height: 1.8; color: #333;">
+    Focused on server-side logic and application architecture. I appreciate clean code, well-designed APIs, and quiet efficiency.
+  </p>
 
-          # 6. Music (Apple Music block)
-          # Note: This requires setup. Changing to 'random' for now so it works instantly.
-          plugin_music: yes
-          plugin_music_provider: apple
+  <br />
 
-          # 7. Projects
-          plugin_projects: yes
-          plugin_projects_limit: 4
+  ---
+
+  <br />
+
+  <img src="https://img.shields.io/badge/Java-000000?style=flat-square&logo=openjdk&logoColor=white" alt="Java" />
+  <img src="https://img.shields.io/badge/Spring_Boot-000000?style=flat-square&logo=springboot&logoColor=white" alt="Spring" />
+  <img src="https://img.shields.io/badge/MySQL-000000?style=flat-square&logo=mysql&logoColor=white" alt="MySQL" />
+  <img src="https://img.shields.io/badge/Docker-000000?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
+  <img src="https://img.shields.io/badge/Git-000000?style=flat-square&logo=git&logoColor=white" alt="Git" />
+
+  <br /><br /><br />
+
+  <a href="https://github.com/YOUR_USERNAME">
+    <img src="https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&hide_border=true&title_color=000&icon_color=444&text_color=555&bg_color=ffffff" alt="GitHub Stats" />
+  </a>
+
+  <br /><br />
+
+</div>
