@@ -1,31 +1,34 @@
-<!-- ===================== HACKER BANNER ===================== -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=180&section=header&text=Naveen%20%7C%20Backend%20Hacker&fontSize=35&fontColor=00ffcc&animation=fadeIn" />
+  <img src="https://media.giphy.com/media/l0HlBO7eyXzSZkJri/giphy.gif" width="420" />
 </p>
 
-<!-- ===================== TYPING EFFECT ===================== -->
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=3000&pause=800&color=00FFCC&center=true&vCenter=true&width=600&lines=Java+Backend+Developer;Spring+Boot+Enjoyer;API+Architect;Debugging+the+Matrix+%F0%9F%95%B6%EF%B8%8F" />
-</p>
+<h2 align="center">Naveen</h2>
 
-<!-- ===================== HACKER GIF ===================== -->
 <p align="center">
-  <img src="https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif" width="500"/>
+  backend • java • spring
 </p>
 
 ---
 
-## 👾 about_me.sh
-```bash
-> whoami
-naveen
+### about
+- building APIs that don’t fall apart  
+- java, spring boot, mysql  
+- currently interested in system design  
 
-> skills
-Java | Spring Boot | REST APIs | MySQL | Git
+---
 
-> current_status
-Building backend systems & breaking bugs
+### stack
+<p>
+  <img src="https://skillicons.dev/icons?i=java,spring,mysql,git,github,linux&theme=dark" />
+</p>
 
-> mood
-while(coffee) { code(); }
+---
 
+### stats
+<p>
+  <img src="https://github-readme-stats.vercel.app/api?username=naveenmsrit&show_icons=true&hide_title=true&hide_border=true&theme=dark" />
+</p>
+
+---
+
+> *“works on my machine”*
