@@ -1,30 +1,63 @@
-<!--
-Hi, I'm a backend engineer.
-I write resilient services, not flashy demos.
--->
+name: Metrics
+on:
+  # Schedule daily updates
+  schedule: [{cron: "0 0 * * *"}]
+  # (Optional) Run workflow manually
+  workflow_dispatch:
+  # (Optional) Run workflow when pushing on master/main
+  push: {branches: ["master", "main"]}
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          # Your GitHub token
+          token: ${{ secrets.METRICS_TOKEN }}
 
-### 👋 Hello
+          # Options
+          user: ${{ github.repository_owner }}
+          template: classic
+          base: header, activity, community, repositories, metadata
+          config_timezone: Asia/Kolkata # Change this to your timezone
+          
+          # --- Replicating the Screenshot Visuals ---
+          
+          # 1. The Isometric Contribution Calendar (Right side 3D grid)
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: half-year
 
-I build reliable backend systems—primarily with **Java** and **Spring Boot**.  
-Focused on clean architecture, maintainable APIs, and data integrity.
+          # 2. Coding Habits (Charts in middle)
+          plugin_habits: yes
+          plugin_habits_from: 200
+          plugin_habits_days: 14
+          plugin_habits_facts: yes
+          plugin_habits_charts: yes
 
----
+          # 3. Languages (Bar at bottom right)
+          plugin_languages: yes
+          plugin_languages_ignored: >-
+            html, css
+          plugin_languages_details: lines, percentage
 
-### 🛠 Tech Stack
+          # 4. Tech Stack Icons (Bottom Left)
+          plugin_topics: yes
+          plugin_topics_limit: 0
+          plugin_topics_mode: icons
 
-![Java](https://img.shields.io/badge/Java-ED8B00?logo=java&logoColor=white&style=flat)
-![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?logo=spring&logoColor=white&style=flat)
-![REST APIs](https://img.shields.io/badge/REST-000000?logo=fastapi&logoColor=white&style=flat)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white&style=flat)
+          # 5. PageSpeed (Top Right Gauges)
+          # Note: This usually requires a separate Google API key for real data, 
+          # but this enables the visual block.
+          plugin_pagespeed: yes
+          plugin_pagespeed_url: .user.website
 
----
+          # 6. Music (Apple Music block)
+          # Note: This requires setup. Changing to 'random' for now so it works instantly.
+          plugin_music: yes
+          plugin_music_provider: apple
 
-### 📊 GitHub Stats
-
-[![GitHub Stats](https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&theme=dark&count_private=true&hide_border=true&bg_color=0D1117)](https://github.com/YOUR_USERNAME)
-
-> `git commit -m "works on my machine"`
-
----
-
-Replace `YOUR_USERNAME` with your GitHub username before publishing.
+          # 7. Projects
+          plugin_projects: yes
+          plugin_projects_limit: 4
