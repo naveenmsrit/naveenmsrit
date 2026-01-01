@@ -1,5 +1,5 @@
-# 👋 Hey, I’m Naveen :
- <br><br>
+# 👋 Hey, I’m Naveen:
+  <br><br>
 I’m a software developer and AI enthusiast who enjoys turning complex ideas into clean, working code. I spend most of my time exploring the intersection of **data structures, full-stack development, and machine learning**.<br><br>
 I build with **Python, Java, and the MERN stack**, and I’m particularly interested in **AI, NLP, and agentic systems** that automate workflows and power real-world applications. From secure web platforms to intelligent systems that analyze, generate, and adapt—I like working on projects that push both my technical skills and system thinking.<br><br>
 I learn best by building, debugging, and iterating, and I’m currently diving deeper into **machine learning models, scalable system design, and cloud-native development**.<br><br>
@@ -9,7 +9,10 @@ I learn best by building, debugging, and iterating, and I’m currently diving d
 
 ## 🤝 Let’s Build Stuff Together
 Always down to collaborate on cool ideas, side projects, hackathons, or late-night debugging sessions 🚀  
-If you bring curiosity, memes, and commits — we’ll get along just fine 😄
+If you bring curiosity, and commits — we’ll get along just fine 😄
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/naveen-n-269554343/)
+[![Email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:naveenn.msrit@gmail.com)
 
 <p align="left">
   <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="45"/>
